@@ -1,0 +1,426 @@
+html,
+body,
+.mui-content {
+	background-color: #f5f5f5;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+/* 禁用iPhone中Safari的字号自动调整 */
+html {
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	/* 解决IOS默认滑动很卡的情况 */
+	-webkit-overflow-scrolling: touch;
+}
+
+/* 禁止缩放表单 */
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+input {
+	resize: none;
+	border: none;
+}
+
+/* 取消链接高亮  */
+body,
+div,
+ul,
+li,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+textarea,
+select,
+p,
+dl,
+dt,
+dd,
+a,
+img,
+button,
+form,
+table,
+th,
+tr,
+td,
+tbody,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+
+section {
+	font-weight: 500;
+}
+/* 设置HTML5元素为块 */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+/* 图片自适应 */
+img {
+	width: 100%;
+	height: auto;
+	width: auto\9;
+	/* ie8 */
+	display: block;
+	-ms-interpolation-mode: bicubic;
+	/*为了照顾ie图片缩放失真*/
+}
+
+img {
+	border: none;
+}
+
+input, button, select{
+	/* margin: 0 !important;
+	padding: 0 !important; */
+	/* border: none !important; */
+	outline: none;
+	-webkit-appearance: none;
+	/* border-radius: 0 !important; */
+	background: none;;
+}
+textarea {
+	border: none !important;
+	outline: none;
+	-webkit-appearance: none;
+	border-radius: 0 !important;
+	background: none;;
+}
+/* 初始化 */
+body,
+div,
+ul,
+li,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+textarea,
+select,
+p,
+dl,
+dt,
+dd,
+a,
+img,
+button,
+form,
+table,
+th,
+tr,
+td,
+tbody,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font: 12px/1.5 'Microsoft YaHei', '宋体', Tahoma, Arial, sans-serif;
+	background-color: #F7F7F7;
+}
+
+em,
+i {
+	font-style: normal;
+}
+
+ul,
+li {
+	list-style-type: none;
+}
+
+strong {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0
+}
+
+textarea {
+	resize: none;
+	/*禁用了文本的拖拉，尤其在谷歌下*/
+}
+
+
+
+.clearfix:after {
+	content: "";
+	display: block;
+	visibility: hidden;
+	height: 0;
+	clear: both;
+}
+
+.clearfix {
+	zoom: 1;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+	font-family: 'Microsoft YaHei', Tahoma, Arial, sans-serif;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: 100%;
+	font-family: 'Microsoft YaHei';
+}
+
+.display-flex {
+	display: flex;
+}
+
+.text-align {
+	text-align: center;
+}
+
+.h10 {
+	font-size: 0.625rem;
+}
+
+.h12 {
+	font-size: 0.75rem;
+}
+
+.h14 {
+	font-size: 0.875rem;
+}
+
+.h16 {
+	font-size: 1rem;
+}
+
+.h18 {
+	font-size: 1.125rem;
+}
+
+.h20 {
+	font-size: 1.25rem;
+}
+
+.h22 {
+	font-size: 1.375rem;
+}
+
+.h24 {
+	font-size: 1.5rem;
+}
+
+.h26 {
+	font-size: 1.625rem;
+}
+
+.h27 {
+	font-size: 1.6875rem;
+}
+
+.h28 {
+	font-size: 1.75rem;
+}
+
+.h30 {
+	font-size: 1.875rem;
+}
+
+.h32 {
+	font-size: 2rem;
+}
+
+.h34 {
+	font-size: 2.125rem;
+}
+
+.h36 {
+	font-size: 2.25rem;
+}
+
+.h37 {
+	font-size: 2.3125rem;
+}
+
+.h40 {
+	font-size: 2.5rem;
+}
+
+.h42 {
+	font-size: 2.625rem;
+}
+
+.h44 {
+	font-size: 2.75rem;
+}
+
+.h46 {
+	font-size: 2.875rem;
+}
+
+.h54 {
+	font-size: 3.375rem;
+}
+
+.h70 {
+	font-size: 4.375rem;
+}
+
+.color_fff {
+  color: #ffffff;
+}
+.color_000 {
+  color: #000000;
+}
+.color_333 {
+  color: #333333;
+}
+.color_666 {
+  color: #666666;
+}
+.color_999 {
+  color: #999999;
+}
+.color_orange {
+  color: #FF6A19;
+}
+
+.cl_fff {
+	color: #fff;
+}
+
+.cl_333 {
+	color: #333;
+}
+.cl_444 {
+	color: #444;
+}
+.cl_555 {
+	color: #555;
+}
+.cl_666 {
+	color: #666;
+}
+
+.cl_888 {
+	color: #888888;
+}
+
+.cl_d7d {
+	color: #d7d7d7;
+}
+.cl_8c8 {
+	color: #8c8c8c;
+}
+.cl_979 {
+	color: #979797;
+}
+.cl_989 {
+	color: #989898;
+}
+.cl_2da {
+	color: #2DA0F9;
+}
+/*单行溢出*/
+.one-txt-cut {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+/*多行溢出 手机端使用*/
+.txt-cut {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	/* -webkit-line-clamp: 2; */
+	-webkit-box-orient: vertical;
+}
+
+/* 移动端点击a链接出现蓝色背景问题解决 */
+a:link,
+a:active,
+a:visited,
+a:hover {
+	background: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-webkit-tap-highlight-color: transparent;
+}
+
+.overflow {
+	overflow: hidden;
+}
+
+/* 底部导航 被点击后 */
+.mui-bar-tab .mui-tab-item.mui-active {
+	color: #FFFFFF;
+}
+
+/* v-cloak */
+/* vue  闪屏 */
+[v-cloak]{
+	display: none;
+}

@@ -1,0 +1,122 @@
+@charset "UTF-8";
+body, div, span, header, footer, nav, section, aside, article, ul, dl, dt, dd, li, a, p, h1, h2, h3, h4, h5, h6, i, b, textarea, button, select, figure, figcaption {
+  padding: 0;
+  margin: 0;
+  font-style: normal;
+  border: 0;
+  font-family: "Microsoft Yahei";
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased;
+}
+#app textarea, #app input {
+  font-size: 28px;
+ color:  #323233;
+}
+ul,li{
+  list-style: none;
+}
+
+.van-pull-refresh {
+  min-height: 80vh;
+}
+/* 移动端没有hover */
+/* body:hover, div:hover, span:hover, header:hover, footer:hover, nav:hover, section:hover, aside:hover, article:hover, ul:hover, dl:hover, dt:hover, dd:hover, li:hover, a:hover, p:hover, h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover, i:hover, b:hover, textarea:hover, button:hover, select:hover, figure:hover, figcaption:hover {
+  outline: none;
+} */
+img {
+  vertical-align: middle;
+  /* Remove the border on images inside links in IE 10-. */
+  border-style: none;
+  -webkit-touch-callout: none;
+  
+}
+
+/* 
+html,body {
+  height: 100%;
+ 
+} */
+
+input::-webkit-input-placeholder {
+  /* placeholder颜色  */
+  color: #333;
+  /* placeholder字体大小  */
+  font-size: 0.32rem;
+}
+
+
+
+
+
+
+textarea,input[type="button"], input[type="submit"], input[type="search"], input[type="reset"] {
+  -webkit-appearance: none;
+}
+
+
+
+/* 清除浮动的方法 */
+.clearfix:after {
+  content: "";
+  /*设置内容为空*/
+  height: 0;
+  /*高度为0*/
+  line-height: 0;
+  /*行高为0*/
+  display: block;
+  /*将文本转为块级元素*/
+  visibility: hidden;
+  /*将元素隐藏*/
+  clear: both;
+  /*清除浮动*/
+}
+
+.clearfix {
+  zoom: 1;
+  /*为了兼容IE*/
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+
+
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+/* router-link最终还是被渲染成了a标签,所以要加上 */
+a {
+  background-color: transparent; /* 1 */
+  -webkit-text-decoration-skip: objects; /* 2 */
+  -webkit-touch-callout: none;
+  text-decoration: none;
+}
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+ b,
+ strong {
+   font-weight: bolder;
+ }
+
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+
+ audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+

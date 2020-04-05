@@ -1,0 +1,35 @@
+{
+  "presets": [
+    ["env", {
+      "modules": false,
+      "targets": {
+        "browsers": ["> 1%", "last 2 versions", "not ie <= 8"]
+      }
+    }],
+    "stage-2"
+  ],
+  "ignore": [
+    "@/lib/js/*.js"//排除不规范的js文件检查
+    ],
+  "plugins": [
+    
+    "transform-remove-strict-mode",
+    
+     
+     ['import', {
+       libraryName: 'vant', 
+       libraryDirectory: 'es',
+        style: true 
+        }, 'vant']
+     
+    ]
+  // "plugins": [
+  //   "transform-vue-jsx", 
+  //   "transform-runtime",
+  //   ["import", {
+  //     "libraryName": "vant",
+  //     "libraryDirectory": "es",
+  //     "style": true
+  //   }]
+  // ],
+}
